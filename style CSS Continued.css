@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-image: url("illinois_state_university_logo.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.justified-text {
+    text-align: justify;
+}
+
+h1, h2, h3 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+img {
+    border: 8px solid black;
+    padding: 10px;
+    background-color: yellow;
+}
