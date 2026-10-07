@@ -1,0 +1,129 @@
+/* Overall page */
+body {
+    margin: 0;
+    padding: 20px;
+    background-image: url("a5bg.png");
+    background-repeat: repeat;
+    font-family: Georgia, "Times New Roman", serif;
+    color: #222;
+}
+
+
+/* Main page heading */
+h1 {
+    background-color: white;
+    margin: 0 0 20px 0;
+    padding: 25px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    color: black;
+}
+
+
+/* Navigation */
+nav {
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 18px;
+}
+
+nav a {
+    display: block;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+    padding: 17px 28px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Navigation hover */
+nav a:hover {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Main content */
+main {
+    background-color: white;
+    padding: 35px;
+    margin-bottom: 20px;
+}
+
+
+/* Second heading */
+h2 {
+    margin: 0 0 20px 0;
+    padding-bottom: 15px;
+    border-bottom: 3px solid black;
+
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Paragraphs */
+p {
+    text-align: justify;
+    line-height: 1.25;
+    margin: 0 0 18px 0;
+}
+
+
+/* Links inside the main content */
+main a:link,
+main a:visited {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+/* Link hover */
+main a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background-color: darkblue;
+    border: 3px solid white;
+    padding: 30px;
+    text-align: center;
+
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+
+
+body > div {
+    max-width: 1300px;
+    margin: 0 auto;
+}
