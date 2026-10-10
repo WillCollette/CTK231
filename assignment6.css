@@ -1,0 +1,136 @@
+
+/* Page background */
+body {
+    background-image: url("a62.png");
+    background-repeat: repeat;
+    margin: 0;
+    padding: 1em 0;
+}
+
+/* Main white page - based on the teacher's wrapper example */
+#wrapper {
+    margin: 1em auto;
+    padding: 15px;
+    width: 1200px;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Main heading */
+header {
+    grid-column: span 12;
+}
+
+h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 32px;
+    font-weight: normal;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 22px 18px;
+    margin: 0 0 15px 0;
+}
+
+/* Navigation column */
+nav {
+    grid-column: span 3;
+    padding-right: 15px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    display: block;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #ff0000;
+    text-decoration: none;
+    padding: 17px 16px;
+}
+
+nav a:hover {
+    background-color: #990000;
+}
+
+/* Main content column */
+main {
+    grid-column: span 9;
+    min-width: 0;
+}
+
+h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    margin: 0 0 18px 0;
+    padding-bottom: 10px;
+    border-bottom: 3px solid #000000;
+}
+
+/* Paragraph formatting */
+main p {
+    font-family: Georgia, serif;
+    font-size: 15px;
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Bold introductory paragraphs */
+.intro {
+    font-weight: bold;
+}
+
+/* Brick image */
+.brick-photo {
+    float: left;
+    width: 48%;
+    height: auto;
+    border: 3px solid #000000;
+    padding: 10px;
+    margin: 0 15px 10px 0;
+    box-sizing: border-box;
+}
+
+/* Links in the main paragraphs */
+main p a {
+    color: #ff0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main p a:hover {
+    color: #0000ff;
+    text-decoration: underline;
+}
+
+/* Stop text from wrapping beside the floated image when needed */
+.clearfloat {
+    clear: both;
+}
+
+/* Footer spans all 12 grid columns */
+footer {
+    grid-column: span 12;
+    background-color: #ff0000;
+    color: #ffffff;
+    padding: 15px;
+    margin: 15px -15px -15px -15px;
+    border-top: 3px solid #000000;
+}
+
+footer p {
+    font-family: Verdana, sans-serif;
+    font-style: italic;
+    text-align: center;
+    margin: 0;
+}
