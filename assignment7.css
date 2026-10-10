@@ -1,0 +1,236 @@
+
+/* Body and background */
+body {
+    background-color: #999999;
+    margin: 0;
+    padding: 16px 0;
+    font-family: Georgia, serif;
+}
+
+/* Main white wrapper */
+#wrapper {
+    margin: 1em auto;
+    padding: 0;
+    width: 1200px;
+    max-width: 94%;
+    border: 4px solid #0047ab;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+/* Header */
+header {
+    grid-column: span 12;
+    background: linear-gradient(#0789df, #00449b);
+    padding: 25px 30px;
+}
+
+h1 {
+    margin: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h1 a {
+    color: #75caff;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #ffffff;
+}
+
+/* Navigation */
+nav {
+    grid-column: span 12;
+    background: linear-gradient(#0789df, #00449b);
+    border-bottom: 3px solid #0047ab;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0;
+    border-right: 4px solid #0047ab;
+}
+
+nav a {
+    display: block;
+    box-sizing: border-box;
+    padding: 10px 12px;
+    height: 48px;
+    background: linear-gradient(#0789df, #00449b);
+    color: #75caff;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: linear-gradient(#0050a8, #002d70);
+    color: #ffffff;
+}
+
+nav a.active {
+    color: #ffffff;
+}
+
+/* Main content */
+main {
+    grid-column: span 12;
+    min-width: 0;
+}
+
+h2 {
+    color: #003399;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    margin: 0 0 18px 0;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #0047ab;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.15;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Welcome Page: sidebar on the left */
+.welcome-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.left-sidebar {
+    grid-column: span 4;
+    background-color: #add8e6;
+    padding: 16px;
+}
+
+.right-content {
+    grid-column: span 8;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.bold-text {
+    font-weight: bold;
+    text-align: justify;
+}
+
+/* Welcome Page image */
+.welcome-layout .content-photo {
+    float: left;
+    width: 55%;
+    height: auto;
+    border: 3px solid #0047ab;
+    margin: 0 20px 12px 0;
+    box-sizing: border-box;
+}
+
+/* About Page: sidebar on the right */
+.about-layout {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.left-content {
+    grid-column: span 8;
+    background-color: #ffffff;
+    padding: 16px;
+}
+
+.right-sidebar {
+    grid-column: span 4;
+    background-color: #add8e6;
+    padding: 16px;
+}
+
+/* About Page image */
+.about-layout .content-photo {
+    float: right;
+    width: 55%;
+    height: auto;
+    border: 3px solid #0047ab;
+    margin: 0 0 12px 20px;
+    box-sizing: border-box;
+}
+
+/* Links in paragraphs */
+main p a {
+    color: #cc1800;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+main p a:hover {
+    color: #0047ab;
+    text-decoration: underline;
+}
+
+/* Gallery: three equal columns */
+.gallery-layout {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    padding: 16px;
+}
+
+.gallery-item {
+    min-width: 0;
+}
+
+.gallery-item h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 505px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.gallery-item p {
+    margin-bottom: 16px;
+}
+
+/* Footer */
+footer {
+    grid-column: span 12;
+    background-color: #d71900;
+    border-top: 4px solid #0047ab;
+    padding: 12px;
+    min-height: 82px;
+}
+
+footer a {
+    display: inline-block;
+}
+
+footer img {
+    display: block;
+    width: 285px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Clear a floated image when necessary */
+.clearfloat {
+    clear: both;
+}
